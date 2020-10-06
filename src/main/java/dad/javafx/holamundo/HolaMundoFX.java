@@ -14,12 +14,12 @@ public class HolaMundoFX extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		
+
 		Label saludoLabel = new Label();
 		saludoLabel.setText("Aquí saldrá el saludo");
 		saludoLabel.setLayoutX(20);
 		saludoLabel.setLayoutY(20);
-		
+
 		Button saludarButton = new Button();
 		saludarButton.setText("Saludar");
 		saludarButton.setTooltip(new Tooltip("Cuando me pulses te saludo"));
@@ -30,12 +30,12 @@ public class HolaMundoFX extends Application {
 				saludoLabel.setText("¡¡¡Hola Mundo!!!");
 			}
 		});
-		
+
 		Pane root = new Pane();
 		root.getChildren().addAll(saludoLabel, saludarButton);
 
 		Scene escena = new Scene(root, 320, 200);
-		
+
 		primaryStage.setScene(escena);
 		primaryStage.setTitle("Hola Mundo con JavaFX");
 		primaryStage.setResizable(false);
